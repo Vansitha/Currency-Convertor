@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="https://unpkg.com/eva-icons"></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Convertor</h1>
+      <div class="input-field-row">
+        <form>
+          <label class="enter-amount-label" for="amount-input"
+            >Enter Amount:</label
+          >
+          <input type="text" id="amount-input" name="amount" />
+        </form>
+      </div>
+      <div class="currency-selection-row">
+        <div class="selection-container-1">
+          <label for="currency-1">From:</label>
+          <select name="currency-1" id="currency-1">
+            <option value="value1">value1</option>
+            <option value="value2">value2</option>
+            <option value="value3">value3</option>
+          </select>
+        </div>
+        <i data-eva="swap-outline"></i>
+        <div class="selection-container-2">
+          <label for="currency-2">To:</label>
+          <select name="currency-2" id="currency-2">
+            <option value="value1">value1</option>
+            <option value="value2">value2</option>
+            <option value="value3">value3</option>
+          </select>
+        </div>
+      </div>
+      <div class="output-row">
+        <p id="output">Result will be displayed here.</p>
+        <button class="btn">Get Exchange Rate</button>
+      </div>
+    </div>
+  </body>
+</html>
