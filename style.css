@@ -99,7 +99,7 @@ i{
     border: none;
     width: 100%;
     padding: 1em 1em;
-    order-radius: 5px;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 2em;
 }
