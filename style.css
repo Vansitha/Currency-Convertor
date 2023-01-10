@@ -11,27 +11,34 @@
 
 /* Typography */
 * {
-    --primary-color: #023047;
-    --secondary-color: #f1faee;
+    --primary-color: #fefae0;
+    --secondary-color: #ffffff;
+    --accent-color: #ef233c;
+    --font-color: #2f3e46;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
+    color: var(--font-color);
+    background-color: var(--accent-color);
     display: grid;
     place-items: center;
     height: 100vh;
+}
+
+p, button {
     font-size: 1rem;
 }
 
 h1 {
     font-size: 1.875rem;
     text-align: center;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.7em;
 }
 
 
 @media all and (min-width: 768px) {
-    body {
+    p, button {
         font-size: 1.125rem;
     }
 
@@ -45,16 +52,23 @@ label {
 }
 
 .container {
+    background-color: var(--secondary-color);
     margin: 0 auto;
-    border: 3px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     padding: 2rem 2rem;
     min-width: fit-content;
 
 }
 
+label {
+    padding-bottom: 3px;
+}
+
 #amount-input {
+    border-radius: 5px;
     box-sizing: border-box;
+    border: 1px solid var(--font-color);
     padding: 0.7em 0.5em;
     width: 100%;
 }
@@ -67,20 +81,34 @@ label {
 }
 
 select {
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
     padding: 1em 1em;
     width: 10rem;
 }
 
-i {
+i{
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
 }
 
 .btn {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
     width: 100%;
     padding: 1em 1em;
-    border-radius: 5px;
+    order-radius: 5px;
     cursor: pointer;
     margin-top: 2em;
+}
+
+/* Success: */
+.error {
+    color: #9d0208;
+}
+
+.success{
+    color: #40916c;
 }
