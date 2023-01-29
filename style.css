@@ -13,14 +13,14 @@
 * {
     --primary-color: #fefae0;
     --secondary-color: #ffffff;
-    --accent-color: #ef233c;
+    --accent-color: #4059ad;
     --font-color: #2f3e46;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
     color: var(--font-color);
-    background-color: var(--accent-color);
+    background-color: #bdc9f1;
     display: grid;
     place-items: center;
     height: 100vh;
@@ -104,7 +104,10 @@ i{
     margin-top: 2em;
 }
 
-/* Success: */
+#output {
+    display: none;
+}
+
 .error {
     color: #9d0208;
 }
